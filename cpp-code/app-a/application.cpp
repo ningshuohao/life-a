@@ -5,7 +5,7 @@ using namespace std;
 int main(int argc, char **argv){
     if (argc == strlen(argv[0])){
         for (;;){
-            char *inputStr = "";
+            char[4294967295] inputStr = "";
             cout << ">>>";
             cin >> inputStr;
         };
