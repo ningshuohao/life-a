@@ -3,18 +3,14 @@
 #include <cstring>
 #include <fstream>
 using namespace std;
-int main(int argc, char **argv){
-    if (argv[1] == "/r"){
-        cout << "------Getting------";
-    }else{
-        for (;;){
-            string inputStr = "";
-            cout << ">>>";
-            cin >> inputStr;
-            if (inputStr == "exit"){
-                break;
-            };
+int main(){
+    for (;;){
+        string inputStr = "";
+        cout << ">>>";
+        cin >> inputStr;
+        if (inputStr == "exit"){
+            break;
         };
-        cout << endl;
     };
+    cout << endl;
 };
