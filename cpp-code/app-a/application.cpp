@@ -6,13 +6,13 @@ using namespace std;
 int main(int argc, char **argv){
     if (argc == strlen(argv[0])){
         for (;;){
-            char *inputStr = "";
+            string inputStr = "";
             cout << ">>>";
             cin >> inputStr;
         };
         cout << endl;
     }else{
-        if (argv == "/r"){
+        if (argv[1] == "/r"){
             cout << "------Getting------";
         };
     };
