@@ -11,6 +11,9 @@ int main(int argc, char **argv){
             string inputStr = "";
             cout << ">>>";
             cin >> inputStr;
+            if (inputStr == "exit"){
+                break;
+            };
         };
         cout << endl;
     };
