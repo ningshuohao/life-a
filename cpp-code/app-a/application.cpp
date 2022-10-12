@@ -19,6 +19,6 @@ int main(){
         };
         cout << endl;
     }else{
-        //no code
+        string fileName;
     };
 };
