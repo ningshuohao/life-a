@@ -5,7 +5,7 @@
 using namespace std;
 int main(){
     string appMode;
-    cout << "Test Application,version 0.1" << endl << "Mode 1:Open file to use." << endl << "Mode 2:Enter command.";
+    cout << "Test Application,version 0.1" << endl << "Mode 1:Open file to use." << endl << "Mode 2:Enter command." << endl;
     cout << "Mode(1/2):";
     cin >> appMode;
     if (appMode == "2"){
