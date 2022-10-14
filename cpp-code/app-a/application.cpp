@@ -26,7 +26,7 @@ int main(){
         if (fileType == test){
             toFile.open(fileNameToOpen,ios::in);
             //no code
-            toFile.close()
+            toFile.close();
         };
     };
 };
