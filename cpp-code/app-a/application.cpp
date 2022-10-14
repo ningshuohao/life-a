@@ -19,5 +19,7 @@ int main(){
         };
     }else{
         string fileName;
+        cout << "File Name:";
+        cin >> fileName;
     };
 };
