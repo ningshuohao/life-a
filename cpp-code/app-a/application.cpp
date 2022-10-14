@@ -30,11 +30,11 @@ int main(){
             };
         };
     }else{
+        ifstream toFile;
         string fileName;
         for (;;){
             cout << "File Name:";
             cin >> fileName;
-            ifstream toFile;
             string fileType = (StringSplit(fileName,"."))[1];
             if (fileType == "test"){
                 break;
