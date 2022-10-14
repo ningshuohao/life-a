@@ -17,7 +17,6 @@ int main(){
                 break;
             };
         };
-        cout << endl;
     }else{
         string fileName;
     };
