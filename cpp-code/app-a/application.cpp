@@ -34,7 +34,7 @@ int main(){
         cout << "File Name:";
         cin >> fileName;
         ifstream toFile;
-        string fileType = (fileName.Split("."))[1];
+        string fileType = (StringSplit(fileName))[1];
         if (fileType == "test"){
             toFile.open(fileName,ios::in);
             //no code
