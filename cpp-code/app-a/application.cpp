@@ -23,7 +23,7 @@ int main(){
         cin >> fileName;
         ifstream toFile;
         char* fileNameToOpen = fileName.c_str;
-        char* fileTrueName = fileNameToOpen.strtok();
+        char* fileTrueName = fileNameToOpen.strtok(".");
             toFile.open(fileNameToOpen,ios::in);
             //no code
             toFile.close()
