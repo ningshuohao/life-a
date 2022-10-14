@@ -3,7 +3,6 @@
 #include <cstring>
 #include <fstream>
 using namespace std;
-using namespace ios;
 int main(){
     string appMode;
     cout << "Test Application,version 0.1" << endl << "Mode 1:Open file to use." << endl << "Mode 2:Enter command." << endl;
@@ -23,5 +22,7 @@ int main(){
         cout << "File Name:";
         cin >> fileName;
         ifstream toFile;
+        char fileNameToOpen = fileName.c_str;
+        toFile.open(fileNameToOpen,ios::in)
     };
 };
