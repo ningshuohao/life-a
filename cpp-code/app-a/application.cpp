@@ -22,10 +22,11 @@ int main(){
         cout << "File Name:";
         cin >> fileName;
         ifstream toFile;
-        char* fileNameToOpen = fileName.c_str;
-        char* fileTrueName = fileNameToOpen.strtok(".");
+        string fileType = (fileName.split("."))[1];
+        if (fileType == test){
             toFile.open(fileNameToOpen,ios::in);
             //no code
             toFile.close()
+        };
     };
 };
