@@ -24,5 +24,6 @@ int main(){
         ifstream toFile;
         char fileNameToOpen = fileName.c_str;
         toFile.open(fileNameToOpen,ios::in);
+        toFile.close()
     };
 };
