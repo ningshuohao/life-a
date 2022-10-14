@@ -30,8 +30,8 @@ int main(){
             };
         };
     }else{
+        string fileName;
         for (;;){
-            string fileName;
             cout << "File Name:";
             cin >> fileName;
             ifstream toFile;
