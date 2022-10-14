@@ -22,8 +22,10 @@ int main(){
         cout << "File Name:";
         cin >> fileName;
         ifstream toFile;
-        char fileNameToOpen = fileName.c_str;
-        toFile.open(fileNameToOpen,ios::in);
-        toFile.close()
+        char* fileNameToOpen = fileName.c_str;
+        char* fileTrueName = fileNameToOpen.strtok();
+            toFile.open(fileNameToOpen,ios::in);
+            //no code
+            toFile.close()
     };
 };
