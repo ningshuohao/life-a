@@ -22,5 +22,6 @@ int main(){
         string fileName;
         cout << "File Name:";
         cin >> fileName;
+        ifstream toFile;
     };
 };
