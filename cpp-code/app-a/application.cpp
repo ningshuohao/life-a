@@ -30,15 +30,20 @@ int main(){
             };
         };
     }else{
-        string fileName;
-        cout << "File Name:";
-        cin >> fileName;
-        ifstream toFile;
-        string fileType = (StringSplit(fileName))[1];
-        if (fileType == "test"){
-            toFile.open(fileName,ios::in);
-            //no code
-            toFile.close();
+        for (;;){
+            string fileName;
+            cout << "File Name:";
+            cin >> fileName;
+            ifstream toFile;
+            string fileType = (StringSplit(fileName,"."))[1];
+            if (fileType == "test"){
+                break;
+            };
         };
+        toFile.open(fileName,ios::in);
+        string getFile;
+        getFile << toFile;
+        StringSplit(getFile,"\n");
+        toFile.close();
     };
 };
