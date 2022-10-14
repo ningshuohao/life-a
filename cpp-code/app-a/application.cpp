@@ -4,7 +4,7 @@
 #include <cstring>
 #include <fstream>
 using namespace std;
-string StringSplit(string splitStr,const char toSplitchar){
+string StringSplit(string splitStr,const char* toSplitchar){
     string returnArray[256] = {};
     istringstream iss(splitStr);
     string tokenString;
