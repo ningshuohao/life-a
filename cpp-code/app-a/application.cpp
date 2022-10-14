@@ -23,6 +23,6 @@ int main(){
         cin >> fileName;
         ifstream toFile;
         char fileNameToOpen = fileName.c_str;
-        toFile.open(fileNameToOpen,ios::in)
+        toFile.open(fileNameToOpen,ios::in);
     };
 };
