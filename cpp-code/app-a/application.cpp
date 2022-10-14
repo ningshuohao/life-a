@@ -1,8 +1,20 @@
 #include <iostream>
+#include <sstream>
 #include <string>
 #include <cstring>
 #include <fstream>
 using namespace std;
+string StringSplit(string splitStr,const char toSplitchar){
+    string returnArray[256] = {};
+    istringstream iss(splitStr);
+    string tokenString;
+    int tokenNum = 0;
+    while(getline(iss,tokenString,toSplitchar)){
+        returnArray[tokenNum] = tokenString;
+        tokenNum++;
+    };
+    return returnArray;
+};
 int main(){
     string appMode;
     cout << "Test Application,version 0.1" << endl << "Mode 1:Open file to use." << endl << "Mode 2:Enter command." << endl;
@@ -22,9 +34,9 @@ int main(){
         cout << "File Name:";
         cin >> fileName;
         ifstream toFile;
-        string fileType = (fileName.split("."))[1];
-        if (fileType == test){
-            toFile.open(fileNameToOpen,ios::in);
+        string fileType = (fileName.Split("."))[1];
+        if (fileType == "test"){
+            toFile.open(fileName,ios::in);
             //no code
             toFile.close();
         };
