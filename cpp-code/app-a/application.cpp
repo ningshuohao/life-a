@@ -4,16 +4,11 @@
 #include <cstring>
 #include <fstream>
 using namespace std;
-string StringSplit(string splitStr,const const char* toSplitchar){
-    string returnArray[256] = {};
-    istringstream iss(splitStr);
-    string tokenString;
-    int tokenNum = 0;
-    while(tokenString<<iss){
-        returnArray[tokenNum] = tokenString;
-        tokenNum++;
-    };
-    return returnArray;
+int StringSplit(string str,string split)
+{
+    istringstream iss(str);
+    string token;
+    return 0;
 };
 int main(){
     string appMode;
@@ -35,14 +30,14 @@ int main(){
         for (;;){
             cout << "File Name:";
             cin >> fileName;
-            string fileType = (StringSplit(fileName,"."))[1];
-            if (fileType == "test"){
+            int fileType = StringSplit(fileName,".");
+            if (fileType == 0){
                 break;
             };
         };
         toFile.open(fileName,ios::in);
         string getFile;
-        getFile << toFile;
+        toFile >> getFile;
         StringSplit(getFile,"\n");
         toFile.close();
     };
