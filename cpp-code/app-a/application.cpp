@@ -2,10 +2,19 @@
 #include <string>
 #include <cstring>
 #include <fstream>
-#include "class/sys.h"
+// #include "./class/sys.h"
 using namespace std;
 //此函数用strtok方法，
-string StringSplit(string TODO,string SPLIT_STR){};
+string StringSplit(string TODO,string SPLITSTR){
+    //获得Char型的被分隔值
+    char* toDoChar = (char*)TODO.c_str();
+    //获得Char型的分隔值
+    const char* splitStrChar = SPLITSTR.c_str();
+    //隔出后的暂存点
+    char* token;
+    
+    return "";
+};
 int main(){
     string appMode;
     cout << "Ashto,version 0.1" << endl << "Mode 1:Open file to use." << endl << "Mode 2:Enter command." << endl;
@@ -15,23 +24,14 @@ int main(){
         for (;;){
             string inputStr = "";
             cout << ">>>";
-            cin >> inputStr;
+            cin.get(inputStr);
             if (inputStr == "exit"){
                 break;
             };
         };
     }else{
         ifstream toFile;
-        string fileName;
-        for (;;){
-            cout << "File Name:";
-            cin >> fileName;
-            int fileType = StringSplit(fileName,".");
-            if (fileType == 0){
-                break;
-            };
-        };
-        toFile.open(fileName,ios::in);
+        toFile.open("in.ato",ios::in);
         string getFile;
         toFile >> getFile;
         StringSplit(getFile,"\n");

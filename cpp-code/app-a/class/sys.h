@@ -1,7 +1,12 @@
 #include <iostream>
 #include <vector>
-namespace publishcode {
+namespace publiccode {
+	class var{
+		public:
+		void;
+	};
 	class consle {
+		public:
 		void out(std::string outStr, std::string endStr) {
 			std::cout << outStr << endStr;
 		};
@@ -11,11 +16,18 @@ namespace publishcode {
 		void out(float outStr, std::string endStr) {
 			std::cout << outStr << endStr;
 		};
-		std::string in() {
+		std::string in(string varName) {
 			
 		};
 	};
 };
 namespace privatecode {
-	class consle{};
+	class var{
+		public:
+		string var[] = {};
+	};
+	class consle{
+		public:
+		void;
+	};
 };
