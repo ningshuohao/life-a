@@ -24,10 +24,6 @@ namespace publiccode {
 namespace privatecode {
 	class var{
 		public:
-		string var[] = {};
-	};
-	class consle{
-		public:
-		void;
+		std::string var[] = {};
 	};
 };

@@ -12,7 +12,20 @@ string StringSplit(string TODO,string SPLITSTR){
     const char* splitStrChar = SPLITSTR.c_str();
     //隔出后的暂存点
     char* token;
-    
+    int tokenCharNum;
+    int toDoCharlen = toDoChar.strlen();
+    //分割    @1 19line    @2 22line
+    //第一个
+    token = strtok(toDoChar,splitStrChar);
+    tokenCharNum = token.sizeof();
+    //剩下的
+    for (int i = tokenCharNum;i < toDoCharlen;i++){
+        token = strtok(NULL,splitStrChar);
+        tokenCharNum = token.sizeof();
+        for (int j = 0;j<tokenCharNum;j++){
+            i++;
+        };
+    };
     return "";
 };
 int main(){
@@ -22,9 +35,9 @@ int main(){
     cin >> appMode;
     if (appMode == "2"){
         for (;;){
-            string inputStr = "";
+            char* inputStr = (char*)"";
             cout << ">>>";
-            cin.get(inputStr);
+            cin >> inputStr;
             if (inputStr == "exit"){
                 break;
             };
