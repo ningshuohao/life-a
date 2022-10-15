@@ -5,10 +5,10 @@
 #include "class/sys.h"
 using namespace std;
 //此函数用strtok方法，
-string StringSplit(){};
+string StringSplit(string TODO,string SPLIT_STR){};
 int main(){
     string appMode;
-    cout << "Test Application,version 0.1" << endl << "Mode 1:Open file to use." << endl << "Mode 2:Enter command." << endl;
+    cout << "Ashto,version 0.1" << endl << "Mode 1:Open file to use." << endl << "Mode 2:Enter command." << endl;
     cout << "Mode(1/2):";
     cin >> appMode;
     if (appMode == "2"){
