@@ -9,7 +9,7 @@ string StringSplit(string splitStr,const const char* toSplitchar){
     istringstream iss(splitStr);
     string tokenString;
     int tokenNum = 0;
-    while(iss,tokenString,toSplitchar){
+    while(tokenString<<iss){
         returnArray[tokenNum] = tokenString;
         tokenNum++;
     };
