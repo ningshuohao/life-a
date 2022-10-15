@@ -13,15 +13,15 @@ string StringSplit(string TODO,string SPLITSTR){
     //隔出后的暂存点
     char* token;
     int tokenCharNum;
-    int toDoCharlen = toDoChar.strlen();
+    int toDoCharlen = strlen(toDoChar);
     //分割    @1 19line    @2 22line
     //第一个
     token = strtok(toDoChar,splitStrChar);
-    tokenCharNum = token.sizeof();
+    tokenCharNum = strlen(token);
     //剩下的
     for (int i = tokenCharNum;i < toDoCharlen;i++){
         token = strtok(NULL,splitStrChar);
-        tokenCharNum = token.sizeof();
+        tokenCharNum = strlen(token);
         for (int j = 0;j<tokenCharNum;j++){
             i++;
         };
@@ -33,9 +33,9 @@ int main(){
     cout << "Ashto,version 0.1" << endl << "Mode 1:Open file to use." << endl << "Mode 2:Enter command." << endl;
     cout << "Mode(1/2):";
     cin >> appMode;
-    if (appMode == "2"){
+    if (appMode == (char*)"2"){
+        string inputStr;
         for (;;){
-            char* inputStr = (char*)"";
             cout << ">>>";
             cin >> inputStr;
             if (inputStr == "exit"){
