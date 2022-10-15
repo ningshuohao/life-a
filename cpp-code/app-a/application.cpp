@@ -1,15 +1,9 @@
 #include <iostream>
-#include <sstream>
 #include <string>
 #include <cstring>
 #include <fstream>
 using namespace std;
-int StringSplit(string str,string split)
-{
-    istringstream iss(str);
-    string token;
-    return 0;
-};
+
 int main(){
     string appMode;
     cout << "Test Application,version 0.1" << endl << "Mode 1:Open file to use." << endl << "Mode 2:Enter command." << endl;
