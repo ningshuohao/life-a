@@ -1,5 +1,6 @@
 #include <iostream>
-namespace publish {
+#include <vector>
+namespace publishcode {
 	class consle {
 		void out(std::string outStr, std::string endStr) {
 			std::cout << outStr << endStr;
@@ -15,6 +16,6 @@ namespace publish {
 		};
 	};
 };
-namespace privatec {
+namespace privatecode {
 	class consle{};
 };

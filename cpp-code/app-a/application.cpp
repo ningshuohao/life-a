@@ -2,8 +2,10 @@
 #include <string>
 #include <cstring>
 #include <fstream>
+#include "class/sys.h"
 using namespace std;
-
+//此函数用strtok方法，
+string StringSplit(){};
 int main(){
     string appMode;
     cout << "Test Application,version 0.1" << endl << "Mode 1:Open file to use." << endl << "Mode 2:Enter command." << endl;
