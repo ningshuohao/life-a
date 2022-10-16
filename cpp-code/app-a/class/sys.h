@@ -1,9 +1,14 @@
 #include <iostream>
-#include <vector>
+#include <string>
 namespace publiccode {
 	class var{
 		public:
-		void;
+		std::string add(std::striing VarType,std::string VarName,std::string VarValue){
+			if (VarType==NULL){
+				consle.out("IndexError:Type is NULL.","\n")
+				return "error";
+			};
+		};
 	};
 	class consle {
 		public:
@@ -24,6 +29,6 @@ namespace publiccode {
 namespace privatecode {
 	class var{
 		public:
-		std::string var[] = {};
+		std::string Var[65535] = {};
 	};
 };
