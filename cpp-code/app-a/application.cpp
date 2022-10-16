@@ -5,7 +5,7 @@
 // #include "./class/sys.h"
 using namespace std;
 //此函数用strtok方法，
-string StringSplit(string TODO,string SPLITSTR){
+string StringSplit(string TODO,string SPLITSTR,int TODOCHARNUM){
     //获得Char型的被分隔值
     char* toDoChar = (char*)TODO.c_str();
     //获得Char型的分隔值
@@ -13,20 +13,15 @@ string StringSplit(string TODO,string SPLITSTR){
     //隔出后的暂存点
     char* token;
     int tokenCharNum;
-    int toDoCharlen = strlen(toDoChar);
-    //分割    @1 19line    @2 22line
+    //分割    @1 18line    @2 21line
     //第一个
     token = strtok(toDoChar,splitStrChar);
-    tokenCharNum = strlen(token);
     //剩下的
-    for (int i = tokenCharNum;i < toDoCharlen;i++){
+    for (int i = 1;i < TODOCHARNUM;i++){
         token = strtok(NULL,splitStrChar);
-        tokenCharNum = strlen(token);
-        for (int j = 0;j<tokenCharNum;j++){
-            i++;
-        };
     };
-    return "";
+    string RETURNSTR = string(token);
+    return RETURNSTR;
 };
 int main(){
     string appMode;
